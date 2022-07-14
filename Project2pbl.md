@@ -10,3 +10,7 @@
 6. Now we will install our Database we will be using MySQL use the `sudo apt install mysql-server` ![DB Install](mysqlinstall.jpg)
 7. Once install use cmd `sudo mysql` to login into the Database. You will be the Admin user ROOT
 8. Once inside the DB  You will want to run an Pre-installed Security script that will Lockdown some not secure default settings and access to the DB use `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Create your PassWord here'; 
+9. Use Mysql > exit to close out Mysql
+10. Next we will start the Interactive script to Change the password and other settings. to do this we will enter `sudo mysql_secure_installation`
+From here you can press Y or N for the following prompts such as changing the Password which you can then use the cmd `sudo mysql -p` ![MySql-p](mysqlp.jpg) to make sure the new password you created is working 
+11. 
