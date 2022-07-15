@@ -13,4 +13,5 @@
 9. Use Mysql > exit to close out Mysql
 10. Next we will start the Interactive script to Change the password and other settings. to do this we will enter `sudo mysql_secure_installation`
 From here you can press Y or N for the following prompts such as changing the Password which you can then use the cmd `sudo mysql -p` ![MySql-p](mysqlp.jpg) to make sure the new password you created is working 
-11. 
+11. Lastly we will Install PHP. Unlike Apache which automatically has the PHP Process Interpreter NGINX needs to install a separate software for this task. This Decoupling of Software Generally gives PHP processed Web Pages better overall performance. The PHP processor software tells NGINX to pass PHP requests to it we use the `sudo apt install php-fpm` cmd to install this software. We also need to run the `php-mysql` cmd to allow PHP to communicate with our MySql Database ![PHP Install](phpinstall.jpg)
+12. 
