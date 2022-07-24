@@ -14,4 +14,7 @@
 10. Next we will start the Interactive script to Change the password and other settings. to do this we will enter `sudo mysql_secure_installation`
 From here you can press Y or N for the following prompts such as changing the Password which you can then use the cmd `sudo mysql -p` ![MySql-p](mysqlp.jpg) to make sure the new password you created is working 
 11. Lastly we will Install PHP. Unlike Apache which automatically has the PHP Process Interpreter NGINX needs to install a separate software for this task. This Decoupling of Software Generally gives PHP processed Web Pages better overall performance. The PHP processor software tells NGINX to pass PHP requests to it we use the `sudo apt install php-fpm` cmd to install this software. We also need to run the `php-mysql` cmd to allow PHP to communicate with our MySql Database ![PHP Install](phpinstall.jpg)
-12. 
+12. Now we just need to configure the NGINX Server to use the PHP Processor, this allows us to use more than one Server block to encapsulate config details. 
+13. We'll use the cmd `sudo mkdir /var/www/projectLEMP` to create our directory and the variable `$USER` to give change the ownership of directory of our Domain. We do this using the CMD `sudo chown -R $USER:$USER /var/www/projectLEMP`
+14. Now We activate the configuration by using the cmd `sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/` using the configuration from the sites-enabled directory
+15. We can test 
