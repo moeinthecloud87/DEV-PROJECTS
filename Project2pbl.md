@@ -17,4 +17,9 @@ From here you can press Y or N for the following prompts such as changing the Pa
 12. Now we just need to configure the NGINX Server to use the PHP Processor, this allows us to use more than one Server block to encapsulate config details. 
 13. We'll use the cmd `sudo mkdir /var/www/projectLEMP` to create our directory and the variable `$USER` to give change the ownership of directory of our Domain. We do this using the CMD `sudo chown -R $USER:$USER /var/www/projectLEMP`
 14. Now We activate the configuration by using the cmd `sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/` using the configuration from the sites-enabled directory
-15. We can test 
+15. We can test for syntax errors using the cmd `sudo nginx -t`
+16. unlink/disable the default Nginx host that is currently configured to listen on port 80, for this run: `sudo unlink /etc/nginx/sites-enabled/default`
+17. 
+
+
+ 
