@@ -32,5 +32,4 @@ From here you can press Y or N for the following prompts such as changing the Pa
 27. Put some value/s with `INSERT INTO example_database.todo_list (content) VALUES ("My first important item");`
 28. USE CMD `SELECT * FROM example_database.todo_list;` to make sure the values are input correctly and should see output verifying that
 29. Create a PHP script in to the Directory to Connect the MySQL database our todolist table
-30. go to the IP address of of your configured webpage and you should see an output of your table in list format. ![todolist]todolist.jpg
- 
+30. go to the IP address of of your configured webpage and you should see an output of your table in list format. ![todolist](todolist.jpg)
